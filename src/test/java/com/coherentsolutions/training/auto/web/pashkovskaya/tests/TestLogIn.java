@@ -25,7 +25,7 @@ public class TestLogIn extends BaseTest {
         authorizationPage.openHomePageAuthorizedUser(EMAIL, PASSWORD);
 
         WebElement loggedInUserLabel = driver.findElement(LOGGED_IN_USER_LABEL);
-        Thread.sleep(2500);
+        Thread.sleep(3000);
 
         assertEquals(loggedInUserLabel.getText(), LOGGED_IN_USER_LABEL_TEXT, "User is not logged in");
     }
