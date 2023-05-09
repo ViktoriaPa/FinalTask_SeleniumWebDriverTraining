@@ -1,4 +1,4 @@
-package util;
+package com.coherentsolutions.training.auto.web.pashkovskaya.util;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
