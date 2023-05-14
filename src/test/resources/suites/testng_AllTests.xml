@@ -5,7 +5,20 @@
     <listeners>
         <listener class-name="com.coherentsolutions.training.auto.web.pashkovskaya.util.TestAllureListener"></listener>
     </listeners>
-    <test name="AllTests">
+    <test name="AllTests_Chrome">
+        <parameter name="browser" value="chrome"/>
+
+        <classes>
+            <class name="com.coherentsolutions.training.auto.web.pashkovskaya.tests.TestAccountCreation"></class>
+            <class name="com.coherentsolutions.training.auto.web.pashkovskaya.tests.TestLogIn"></class>
+            <class name="com.coherentsolutions.training.auto.web.pashkovskaya.tests.TestAddingAddress"></class>
+            <class name="com.coherentsolutions.training.auto.web.pashkovskaya.tests.TestAddingToWishList"></class>
+            <class name="com.coherentsolutions.training.auto.web.pashkovskaya.tests.TestAddingToCart"></class>
+        </classes>
+    </test>
+    <test name="AllTests_Firefox">
+        <parameter name="browser" value="firefox"/>
+
         <classes>
             <class name="com.coherentsolutions.training.auto.web.pashkovskaya.tests.TestAccountCreation"></class>
             <class name="com.coherentsolutions.training.auto.web.pashkovskaya.tests.TestLogIn"></class>

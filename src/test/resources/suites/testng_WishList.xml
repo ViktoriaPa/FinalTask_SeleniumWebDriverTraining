@@ -5,7 +5,16 @@
     <listeners>
         <listener class-name="com.coherentsolutions.training.auto.web.pashkovskaya.util.TestAllureListener"></listener>
     </listeners>
-    <test name="AllTests">
+    <test name="AddingToWishList_Chrome">
+        <parameter name="browser" value="chrome"/>
+
+        <classes>
+            <class name="com.coherentsolutions.training.auto.web.pashkovskaya.tests.TestAddingToWishList"></class>
+        </classes>
+    </test>
+    <test name="AddingToWishList_Firefox">
+        <parameter name="browser" value="firefox"/>
+
         <classes>
             <class name="com.coherentsolutions.training.auto.web.pashkovskaya.tests.TestAddingToWishList"></class>
         </classes>
